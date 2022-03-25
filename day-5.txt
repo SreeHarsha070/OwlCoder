@@ -1,0 +1,27 @@
+Multiplicative Inverse:
+if (x*y)%n==1 :
+	y is multiplicative inverse of x
+x
+
+def euc_ext(a,b):
+    r,t1,t2,t=0,0,1,0
+    q=0
+    t=0
+    k=a
+    while(b!=0):
+        r=a%b
+        q=a//b
+        t=t1-t2*q
+        a=b
+        b=r
+        t1=t2
+        t2=t
+    if t1<0:
+        return t1%k
+
+    return t1        
+    
+a,b=map(int,input().split())
+if a<b:
+    a,b=b,a
+print(euc_ext(a,b))

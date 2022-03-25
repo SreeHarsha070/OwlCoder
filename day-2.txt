@@ -1,0 +1,8 @@
+reading list :
+arr=list(map(int,input().split()))
+_>
+arr=[int(i) for i in input().split()]
+#Takes less complexity
+
+Binary Search:
+
